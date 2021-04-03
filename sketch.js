@@ -5,7 +5,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   setInterval(increase, 1000)
   textFont('monospace');
-  translate(width / 2, height / 2);
+  translate(window.innerWidth/2, window.innerHeight/2);
   textAlign(CENTER, CENTER);
 }
 
@@ -28,7 +28,7 @@ function digits() {
 }
 
 function draw() {
-  textSize(width / (digits().length/1.7));
+  textSize(window.innerWidth / (digits().length/1.8));
   background(0);
   fill(200);
   text(digits(), width / 2, height / 2);
